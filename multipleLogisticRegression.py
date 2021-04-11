@@ -20,3 +20,7 @@ model.compile(optimizer='sgd' ,loss='binary_crossentropy',metrics=['binary_accur
 model.fit(X, y, batch_size=1, epochs=800, shuffle=False)
 
 print(model.predict(X))
+
+X_test = np.array([[0.1,0.1], [0,1],[1,0], [2,2]])
+
+print(model.predict(X_test))
