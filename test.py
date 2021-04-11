@@ -31,6 +31,7 @@ y = [11,22,33,44,55,66,77,88,99]
 
 optimizer = tf.optimizers.SGD(0.01)
 
+
 for i in range(301):
     with tf.GradientTape() as tape:
 
