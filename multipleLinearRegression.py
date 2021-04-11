@@ -19,6 +19,9 @@ sgd=optimizers.SGD(lr=0.00001)
 model.compile(optimizer = sgd ,loss='mse',metrics=['mse'])
 
 # 주어진 X와 y데이터에 대해서 오차를 최소화하는 작업을 2,000번 시도합니다.
-model.fit(X,y, batch_size=1, epochs=2000, shuffle=False)
+model.fit(X,y, batch_size=1, epochs=1000, shuffle=False)
 
 print(model.predict(X))
+
+X_test = np.array([[20,99,10],[40,50,20]])
+print(model.predict(X_test))
